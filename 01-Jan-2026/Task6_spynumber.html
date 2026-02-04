@@ -1,0 +1,21 @@
+<script>
+    var n=parseInt(prompt("Enter Number"));
+    var sum=0;
+    var prod=1;
+
+while(n>0)
+{
+    var rem=n%10;
+    sum=sum+rem;
+    prod=prod*rem;
+    n=parseInt(n/10);
+}
+if(sum==prod)
+{
+    document.write("Spy Number")
+}
+else
+{
+    document.write("Not SpyNumber")
+}
+</script>

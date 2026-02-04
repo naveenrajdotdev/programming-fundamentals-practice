@@ -1,0 +1,20 @@
+<script>
+    var arr = [121, 444, 565, 667];
+    for (j = 0; j < arr.length; j++) {
+        var n = arr[j];
+        var b = n;
+        var rev = 0;
+
+        while (n > 0) {
+            var rem = n % 10;
+            rev = rev * 10 + rem;
+            n = parseInt(n / 10);
+        }
+        if (rev == b) {
+            document.write(b + " is polindrome <br>")
+        }
+        else {
+            document.write(b + " is Not polindrome <br>")
+        }
+    }
+</script>

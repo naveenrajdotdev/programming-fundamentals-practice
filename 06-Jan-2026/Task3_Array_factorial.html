@@ -1,0 +1,17 @@
+<script>
+    var ele = parseInt(prompt("Enter array element count:"));
+    var arr = [];
+    for (let k = 0; k < ele; k++) {
+        let values = parseInt(prompt("Enter array items:"))
+        arr[k] = values;
+    }
+    for (var j = 0; j < arr.length; j++) {
+        var n = arr[j];
+        var prod = 1;
+
+        for (var i = 1; i <= n; i++) {
+            prod = prod * i;
+        }
+        document.write(n + " factorial is " + prod + "<br>");
+    }
+</script>

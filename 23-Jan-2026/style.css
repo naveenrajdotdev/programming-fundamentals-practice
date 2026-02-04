@@ -1,0 +1,13 @@
+body
+{
+    background-color: rgb(182, 241, 113);
+}
+.center
+{
+    text-align: center;
+}
+.tabcen
+{
+    display: flex;
+    justify-content: center;
+}

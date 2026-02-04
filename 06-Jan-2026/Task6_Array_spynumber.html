@@ -1,0 +1,27 @@
+<script>
+    var ele = parseInt(prompt("Enter array element count:"));
+    var arr = [];
+    for (let k = 0; k < ele; k++) {
+        let values = parseInt(prompt("Enter array items:"))
+        arr[k] = values;
+    }
+    for (var i = 0; i < arr.length; i++) {
+        var n = arr[i];
+        let sum = 0;
+        let prod = 1;
+        while (n > 0) {
+            var rem = n % 10;
+            sum = sum + rem;
+            prod = prod * rem;
+            n = parseInt(n / 10);
+        }
+
+        if (sum === prod) {
+            document.write("Spy Number<br>")
+        }
+        else {
+            document.write("Not SpyNumber<br>")
+        }
+    }
+
+</script>

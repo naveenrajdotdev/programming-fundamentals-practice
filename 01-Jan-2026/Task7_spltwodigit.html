@@ -1,0 +1,23 @@
+<script>
+    var n=parseInt(prompt("Enter Number"));
+    var b=n;
+    var sum=0;
+    var prod=1;
+
+while(n>0)
+{
+    var rem=n%10;
+    sum=sum+rem;
+    prod=prod*rem;
+    n=parseInt(n/10);
+}
+var spl=sum+prod;
+if(spl==b)
+{
+    document.write("same")
+}
+else
+{
+    document.write("Not same")
+}
+</script>

@@ -1,0 +1,15 @@
+<script>
+    var arr=[22, 44, 66];
+    for(var j=0;j<arr.length;j++)
+    {
+    var n=arr[j];
+    var sum=0;
+    while(n>0)
+    {     
+        var rem=n%10;
+        sum=sum+rem;
+        n=parseInt(n/10);
+    }
+document.write(sum+"<br>");
+    }
+</script>

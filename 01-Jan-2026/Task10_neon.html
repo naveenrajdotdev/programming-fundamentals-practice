@@ -1,0 +1,21 @@
+<script>
+    var num=parseInt(prompt("Enter Number"));
+    var sqr=num*num;
+    var sum=0;
+    var b=sqr;
+
+while(b>0)
+{
+    var rem=b%10;
+    sum=sum+rem;
+    b=parseInt(b/10);
+}
+if(sum==num)
+{
+    document.write("Neon")
+}
+else
+{
+    document.write("Not Neon")
+}
+</script>

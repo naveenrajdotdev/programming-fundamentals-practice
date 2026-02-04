@@ -1,0 +1,21 @@
+<script>
+    var ele=parseInt(prompt("Enter array element count:"));
+    var arr=[];
+    for(let k=0;k<ele;k++)
+{
+    let values=parseInt(prompt("Enter array items:"))
+    arr[k]=values;
+}
+    for(var j=0;j<arr.length;j++)
+    {
+    var n=arr[j];
+    var sum=0;
+    while(n>0)
+    {     
+        var rem=n%10;
+        sum=sum+rem;
+        n=parseInt(n/10);
+    }
+document.write(sum+"<br>");
+    }
+</script>

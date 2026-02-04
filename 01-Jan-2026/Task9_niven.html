@@ -1,0 +1,20 @@
+<script>
+    var n=parseInt(prompt("Enter Number"));
+    var b=n;
+    var sum=0;
+
+while(n>0)
+{
+    var rem=n%10;
+    sum=sum+rem;
+    n=parseInt(n/10);
+}
+if(b%sum==0)
+{
+    document.write("Niven")
+}
+else
+{
+    document.write("Not Niven")
+}
+</script>

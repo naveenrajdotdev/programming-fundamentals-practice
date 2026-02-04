@@ -1,0 +1,26 @@
+<script>
+    let ele = parseInt(prompt("Enter array element count:"));
+    var arr = [];
+    for (let k = 0; k < ele; k++) {
+        var values = parseInt(prompt("Enter array items:"))
+        arr[k] = values;
+    }
+
+    for (var j = 0; j < arr.length; j++) {
+        var n = arr[j];
+        var sum = 0;
+        for (var i = 1; i < n; i++) {
+            if (n % i == 0) {
+                sum = sum + i;
+            }
+        }
+
+        if (n == sum) {
+            document.write("Perfect Number " + n + "<br>")
+        }
+        else {
+            document.write("Not perfect Number " + n + "<br>")
+        }
+    }
+
+</script>

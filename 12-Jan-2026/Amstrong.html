@@ -1,0 +1,19 @@
+<script>
+    for (var j = 101; j <= 200; j++) {
+        var n = j;
+        var b = n;
+        var sum = 0;
+
+        while (n > 0) {
+            var rem = n % 10;
+            sum = sum + rem * rem * rem;
+            n = parseInt(n / 10);
+        }
+        if (sum == b) {
+            document.write(j + " Armstrong<br>")
+        }
+        else {
+            document.write(j + " Not Armstrong<br>")
+        }
+    }
+</script>

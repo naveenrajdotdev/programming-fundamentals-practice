@@ -1,0 +1,39 @@
+<script>
+    class A1{
+        constructor(a, b)
+        {
+            this.number1=a;
+            this.number2=b;
+        }
+        add()
+        {
+            var a=this.number1+this.number2;
+            document.write("Add: "+a)
+        }
+        sub()
+        {
+            var b=this.number1-this.number2;
+            document.write("<br>Sub: "+b)
+        }
+        mul()
+        {
+            var c=this.number1*this.number2;
+            document.write("<br>Mul: "+c)
+        }
+        div()
+        {
+            var d=this.number1/this.number2;
+            document.write("<br>Div: "+d)
+        }
+    }
+var getvaluea=parseInt(prompt("Enter value one:"))
+var getvalueb=parseInt(prompt("Enter value two:"))
+var calc = new A1(getvaluea,getvalueb);
+calc.add()
+calc.sub()
+calc.mul()
+calc.div()
+
+
+
+</script>

@@ -1,0 +1,28 @@
+<script>
+var arr = [22, 123, 124, 1124];
+    var sum=0;
+    var prod=1;
+for(var i=0; i<arr.length; i++)
+{
+    var n=arr[i];
+    var sum=0;
+    var prod=1;
+while(n>0)
+{
+    var rem=n%10;
+    sum=sum+rem;
+    prod=prod*rem;
+    n=parseInt(n/10);
+}
+
+if(sum===prod)
+{
+    document.write("Spy Number<br>")
+}
+else
+{
+    document.write("Not SpyNumber<br>")
+}
+}
+
+</script>

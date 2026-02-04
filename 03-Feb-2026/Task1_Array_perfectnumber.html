@@ -1,0 +1,25 @@
+<script>
+    var arr=[6,12, 55, 89];
+    for(var j=0;j<arr.length;j++)
+    {
+        var n=arr[j];
+        var sum=0;
+        for(var i=1;i<n;i++)
+    {
+    if(n%i==0)
+    {
+        sum=sum+i;
+    }
+    }
+
+    if(n==sum)
+    {
+        document.write("Perfect Number " + n + "<br>")
+    }
+    else
+    {
+        document.write("Not perfect Number " + n + "<br>")
+    }
+}
+    
+</script>

@@ -1,0 +1,17 @@
+<script>
+    for (var j = 1; j <= 20; j++) {
+        var n = j;
+        var sum = 0;
+        for (var i = 1; i < n; i++) {
+            if (n % i == 0) {
+                sum = sum + i;
+            }
+        }
+        if (sum > n) {
+            document.write(j + " Abundant number<br>")
+        }
+        else {
+            document.write(j + " Not Abundant number<br>")
+        }
+    }
+</script>

@@ -1,0 +1,9 @@
+<script>
+    var arr=[60, 50, 40, 30, 20];
+    let sq = arr.map((n)=>n*n)
+    document.write("Square of the array elements: " + sq)
+    let below50 = arr.filter((a)=>a<50)
+    document.write("<br>Below fifty: " + below50)
+    let tot = arr.reduce((sum, num)=>sum+num,0)
+    document.write("<br>Sum of array elements: " + tot)
+</script>

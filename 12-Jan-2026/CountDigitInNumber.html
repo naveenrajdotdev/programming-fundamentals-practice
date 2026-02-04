@@ -1,0 +1,14 @@
+<script>
+    for(var j=1;j<=100;j++)
+{
+    var n=j;
+    var count=0;
+    while(n>0)
+    {     
+        var rem=n%10;
+        count++;
+        n=parseInt(n/10);
+    }
+document.write("Digit count for the number " + j + " is " + count + "<br>");
+}
+</script>
